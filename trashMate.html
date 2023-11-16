@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/img/logo-web.png" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>Penukaran Sampah</title>
+</head>
+
+<body>
+    <section class="trash container">
+        <div class="trash__container">
+            <div class="trash__screen">
+                <div class="trash__back">
+                    <a href="index.html" class="trash__back"><i class="ri-arrow-left-s-line"></i></a>
+                </div>
+                <h2 class="trash__title">Tukar Sampah</h2>
+                <form action="index.html" method="POST">
+                    <label for="jenis_sampah" class="trash__label">Jenis Sampah</label>
+                    <select name="jenis" class="trash__dropdown" id="jenis">
+                        <option value="">Pilih Jenis Sampah</option>
+                        <option value="Sampah Organik">Sampah Organik</option>
+                        <option value="Sampah Non Organik">Sampah Non Organik</option>
+                    </select>
+
+                    <label for="berat" class="trash__label">Berat Sampah</label>
+                    <input id="berat" name="berat" type="text" required class="trash__form">
+
+                    <label for="harga" class="trash__label">Total Harga</label>
+                    <input id="harga" name="harga" type="text" required class="trash__form" disabled>
+
+                    <div class="trash__info">
+                        <div class="trash__info__content">
+                            <h3 class="trash__info__title">Jenis Sampah</h3>
+                            <p>Organik</p>
+                        </div>
+                        <div class="trash__info__content">
+                            <h3 class="trash__info__title">Berat Sampah</h3>
+                            <p>15 <span>Kg</span></p>
+                        </div>
+                        <div class="trash__info__content">
+                            <h3 class="trash__info__title">Total Harga</h3>
+                            <p><span>Rp.</span>100000</p>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="trash__submitButton" onclick="submitTrashForm()">Continue</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>

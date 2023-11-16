@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/img/logo-web.png" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>Sign up</title>
+</head>
+
+<body>
+    <section class="register container">
+        <div class="register__container">
+            <div class="register__screen">
+                <div class="register__logo">
+                    <i class="ri-recycle-fill"></i>
+                </div>
+                <h2 class="register__title">Create Account</h2>
+                <form action="login.html" method="POST">
+                    <label for="name" class="register__label">Name</label>
+                    <input id="name" name="name" type="text" autocomplete="name" required class="register__form"
+                        placeholder="input your name">
+                    <label for="email" class="register__label">Email</label>
+                    <input id="email" name="email" type="email" autocomplete="email" required class="register__form"
+                        placeholder="input your email">
+                    <label for="password" class="register__label">Password</label>
+                    <input id="password" name="password" type="password" autocomplete="current-password" required
+                        class="register__form" placeholder="input your password">
+                    <button type="submit" class="register__submitButton" onclick="submitRegisterForm()">Sign in</button>
+                </form>
+
+                <div class="register__login">
+                    <p>
+                        Already have an account? <a href="login.html" class="register__signup">Sign in</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
